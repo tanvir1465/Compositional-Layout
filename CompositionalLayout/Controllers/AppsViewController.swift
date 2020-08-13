@@ -9,6 +9,7 @@
 import UIKit
 
 fileprivate typealias DataSource = UICollectionViewDiffableDataSource<Section, App>
+fileprivate typealias Snapshot = NSDiffableDataSourceSnapshot<Section, App>
 
 class AppsViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class AppsViewController: UIViewController {
     
     let sections = Bundle.main.decode([Section].self, from: "dummyApps.json")
     fileprivate var dataSource: DataSource?
+    fileprivate var snapshot = Snapshot()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,9 @@ class AppsViewController: UIViewController {
         
         addCollectionView()
         registerCells()
+        configureDataSource()
+        configureSnapshot()
+        dataSource?.apply(snapshot)
     }
     
     fileprivate func addCollectionView() {
@@ -33,7 +38,23 @@ class AppsViewController: UIViewController {
     }
     
     fileprivate func registerCells() {
-        
+        collectionView.register(FeaturedAppsCell.self, forCellWithReuseIdentifier: FeaturedAppsCell.reuseIdentifier)
+    }
+    
+    fileprivate func configureDataSource() {
+        dataSource = DataSource(collectionView: collectionView, cellProvider: { (collectionView, indexPath, app) -> UICollectionViewCell? in
+            switch self.sections[indexPath.section].type {
+            default:
+                return CellBuilder.shared.render(FeaturedAppsCell.self, for: collectionView, with: app, for: indexPath)
+            }
+        })
+    }
+    
+    fileprivate func configureSnapshot() {
+        snapshot.appendSections(sections)
+        for section in sections {
+            snapshot.appendItems(section.apps, toSection: section)
+        }
     }
     
 }
