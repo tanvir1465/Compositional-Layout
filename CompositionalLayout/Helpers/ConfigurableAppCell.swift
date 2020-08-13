@@ -10,5 +10,5 @@ import Foundation
 
 protocol ConfigurableAppCell {
     static var reuseIdentifier: String { get }
-    func configureCell(with app: App)
+    func configure(with app: App)
 }
