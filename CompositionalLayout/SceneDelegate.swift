@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = UINavigationController(rootViewController: AppsViewController())
+        navigationController.navigationBar.prefersLargeTitles = true
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
