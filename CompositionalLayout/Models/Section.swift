@@ -17,9 +17,7 @@ struct Section: Decodable, Hashable {
 }
 
 enum SectionType: String, Decodable {
-    case featured = "Featured"
-    case newToPhone = "New To iPhone"
-    case popular =  "Popular Apps"
-    case madeForKids = "Made For Kids"
-    case appWeLove = "Apps We Love Right Now"
+    case featured
+    case row
+    case rowBig
 }
