@@ -10,7 +10,7 @@
                 "tagline": "NEW APP",
                 "name": "Budge GameTime",
                 "subtitle": "Easy to learn, Hard to master",
-                "image": "",
+                "image": "image1",
                 "iap": true
             },
             {
@@ -18,7 +18,7 @@
                 "tagline": "WHAT TO WATCH",
                 "name": "HBO Max: Stream TV & Movies",
                 "subtitle": "Cook along with Selena Gomez",
-                "image": "",
+                "image": "image2",
                 "iap": true
             },
             {
@@ -26,7 +26,7 @@
                 "tagline": "TRY SOMETHING NEW",
                 "name": "Pillow Automatic Sleep Tracker",
                 "subtitle": "Analyze your sleep data",
-                "image": "",
+                "image": "image3",
                 "iap": true
             },
             {
@@ -34,7 +34,7 @@
                 "tagline": "REDISCOVER THIS",
                 "name": "Bookly - Read More Books",
                 "subtitle": "Track your reading habits",
-                "image": "",
+                "image": "image4",
                 "iap": true
             }
         ]
