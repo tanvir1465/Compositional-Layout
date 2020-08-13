@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "type": "Featured",
-        "title": "",
+        "type": "featured",
+        "title": "Featured",
         "subtitle": "",
         "apps": [
             {
@@ -41,8 +41,8 @@
     },
     {
         "id": 2,
-        "type": "New To iPhone",
-        "title": "",
+        "type": "row",
+        "title": "New To iPhone",
         "subtitle": "",
         "apps": [
             {
@@ -113,8 +113,8 @@
     },
     {
         "id": 3,
-        "type": "Popular Apps",
-        "title": "",
+        "type": "row",
+        "title": "Popular Apps",
         "subtitle": "",
         "apps": [
             {
@@ -185,8 +185,8 @@
     },
     {
         "id": 4,
-        "type": "Made For Kids",
-        "title": "",
+        "type": "rowBig",
+        "title": "Made For Kids",
         "subtitle": "",
         "apps": [
             {
@@ -225,8 +225,8 @@
     },
     {
         "id": 5,
-        "type": "Apps We Love Right Now",
-        "title": "",
+        "type": "row",
+        "title": "Apps We Love Right Now",
         "subtitle": "",
         "apps": [
             {
