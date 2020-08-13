@@ -1,0 +1,300 @@
+[
+    {
+        "id": 1,
+        "type": "Featured",
+        "title": "",
+        "subtitle": "",
+        "apps": [
+            {
+                "id": 1,
+                "tagline": "NEW APP",
+                "name": "Budge GameTime",
+                "subtitle": "Easy to learn, Hard to master",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 2,
+                "tagline": "WHAT TO WATCH",
+                "name": "HBO Max: Stream TV & Movies",
+                "subtitle": "Cook along with Selena Gomez",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 3,
+                "tagline": "TRY SOMETHING NEW",
+                "name": "Pillow Automatic Sleep Tracker",
+                "subtitle": "Analyze your sleep data",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 4,
+                "tagline": "REDISCOVER THIS",
+                "name": "Bookly - Read More Books",
+                "subtitle": "Track your reading habits",
+                "image": "",
+                "iap": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "New To iPhone",
+        "title": "",
+        "subtitle": "",
+        "apps": [
+            {
+                "id": 5,
+                "tagline": "",
+                "name": "Facetune2: Best Selfie Editing",
+                "subtitle": "Beauty Camera & Photo Editor",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 6,
+                "tagline": "",
+                "name": "Audible audio books & stories",
+                "subtitle": "Kids, Crime, Scifi Audiobooks",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 7,
+                "tagline": "",
+                "name": "Halide Camera",
+                "subtitle": "Premium RAW & Manual",
+                "image": "",
+                "iap": false
+            },
+            {
+                "id": 8,
+                "tagline": "",
+                "name": "Facetune2: Best Selfie Editing",
+                "subtitle": "Beauty Camera & Photo Editor",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 9,
+                "tagline": "",
+                "name": "Audible audio books & stories",
+                "subtitle": "Kids, Crime, Scifi Audiobooks",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 10,
+                "tagline": "",
+                "name": "Halide Camera",
+                "subtitle": "Premium RAW & Manual",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 11,
+                "tagline": "",
+                "name": "Facetune2: Best Selfie Editing",
+                "subtitle": "Beauty Camera & Photo Editor",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 12,
+                "tagline": "",
+                "name": "Audible audio books & stories",
+                "subtitle": "Kids, Crime, Scifi Audiobooks",
+                "image": "",
+                "iap": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "Popular Apps",
+        "title": "",
+        "subtitle": "",
+        "apps": [
+            {
+                "id": 13,
+                "tagline": "",
+                "name": "Facetune2: Best Selfie Editing",
+                "subtitle": "Beauty Camera & Photo Editor",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 14,
+                "tagline": "",
+                "name": "Audible audio books & stories",
+                "subtitle": "Kids, Crime, Scifi Audiobooks",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 15,
+                "tagline": "",
+                "name": "Halide Camera",
+                "subtitle": "Premium RAW & Manual",
+                "image": "",
+                "iap": false
+            },
+            {
+                "id": 16,
+                "tagline": "",
+                "name": "Facetune2: Best Selfie Editing",
+                "subtitle": "Beauty Camera & Photo Editor",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 17,
+                "tagline": "",
+                "name": "Audible audio books & stories",
+                "subtitle": "Kids, Crime, Scifi Audiobooks",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 18,
+                "tagline": "",
+                "name": "Halide Camera",
+                "subtitle": "Premium RAW & Manual",
+                "image": "",
+                "iap": false
+            },
+            {
+                "id": 19,
+                "tagline": "",
+                "name": "Facetune2: Best Selfie Editing",
+                "subtitle": "Beauty Camera & Photo Editor",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 20,
+                "tagline": "",
+                "name": "Audible audio books & stories",
+                "subtitle": "Kids, Crime, Scifi Audiobooks",
+                "image": "",
+                "iap": true
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "type": "Made For Kids",
+        "title": "",
+        "subtitle": "",
+        "apps": [
+            {
+                "id": 21,
+                "tagline": "",
+                "name": "Super Simple",
+                "subtitle": "Educational kids songs & shows",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 22,
+                "tagline": "",
+                "name": "Super Simple",
+                "subtitle": "Educational kids songs & shows",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 23,
+                "tagline": "",
+                "name": "Super Simple",
+                "subtitle": "Educational kids songs & shows",
+                "image": "",
+                "iap": true
+            },
+            {
+                "id": 24,
+                "tagline": "",
+                "name": "Super Simple",
+                "subtitle": "Educational kids songs & shows",
+                "image": "",
+                "iap": true
+            }
+        ]
+    },
+    {
+        {
+            "id": 5,
+            "type": "Apps We Love Right Now",
+            "title": "",
+            "subtitle": "",
+            "apps": [
+                {
+                    "id": 25,
+                    "tagline": "",
+                    "name": "Facetune2: Best Selfie Editing",
+                    "subtitle": "Beauty Camera & Photo Editor",
+                    "image": "",
+                    "iap": true
+                },
+                {
+                    "id": 26,
+                    "tagline": "",
+                    "name": "Audible audio books & stories",
+                    "subtitle": "Kids, Crime, Scifi Audiobooks",
+                    "image": "",
+                    "iap": true
+                },
+                {
+                    "id": 27,
+                    "tagline": "",
+                    "name": "Halide Camera",
+                    "subtitle": "Premium RAW & Manual",
+                    "image": "",
+                    "iap": false
+                },
+                {
+                    "id": 28,
+                    "tagline": "",
+                    "name": "Facetune2: Best Selfie Editing",
+                    "subtitle": "Beauty Camera & Photo Editor",
+                    "image": "",
+                    "iap": true
+                },
+                {
+                    "id": 29,
+                    "tagline": "",
+                    "name": "Audible audio books & stories",
+                    "subtitle": "Kids, Crime, Scifi Audiobooks",
+                    "image": "",
+                    "iap": true
+                },
+                {
+                    "id": 30,
+                    "tagline": "",
+                    "name": "Halide Camera",
+                    "subtitle": "Premium RAW & Manual",
+                    "image": "",
+                    "iap": false
+                },
+                {
+                    "id": 31,
+                    "tagline": "",
+                    "name": "Facetune2: Best Selfie Editing",
+                    "subtitle": "Beauty Camera & Photo Editor",
+                    "image": "",
+                    "iap": true
+                },
+                {
+                    "id": 32,
+                    "tagline": "",
+                    "name": "Audible audio books & stories",
+                    "subtitle": "Kids, Crime, Scifi Audiobooks",
+                    "image": "",
+                    "iap": true
+                }
+            ]
+        }
+    }
+]
