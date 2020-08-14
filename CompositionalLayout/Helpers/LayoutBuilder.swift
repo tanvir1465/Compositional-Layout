@@ -40,6 +40,19 @@ enum LayoutBuilder {
         return layout
     }
     
+    public static func twoRowsSectionLayout() -> NSCollectionLayoutSection {
+        let size = Size(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5))
+        let item = Item(layoutSize: size)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6)
+        let groupSize = Size(widthDimension: .fractionalWidth(0.95), heightDimension: .fractionalWidth(0.55))
+        let group = Group.vertical(layoutSize: groupSize, subitems: [item])
+        let layout = LayoutSection(group: group)
+        layout.orthogonalScrollingBehavior = .groupPagingCentered
+        let sectionHeader = createSectionHeader(with: 0.95)
+        layout.boundarySupplementaryItems = [sectionHeader]
+        return layout
+    }
+    
     private static func createSectionHeader(with fractionalWidth: CGFloat) -> SupplementaryItem {
         let headerSize = Size(widthDimension: .fractionalWidth(fractionalWidth), heightDimension: .estimated(52))
         let sectionHeader = SupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)

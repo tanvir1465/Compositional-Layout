@@ -42,6 +42,7 @@ class AppsViewController: UIViewController {
         collectionView.register(AppsSectionHeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: AppsSectionHeaderCell.reuseIdentifier)
         collectionView.register(FeaturedAppsCell.self, forCellWithReuseIdentifier: FeaturedAppsCell.reuseIdentifier)
         collectionView.register(ThreeRowsAppsCell.self, forCellWithReuseIdentifier: ThreeRowsAppsCell.reuseIdentifier)
+        collectionView.register(TwoRowsAppsCell.self, forCellWithReuseIdentifier: TwoRowsAppsCell.reuseIdentifier)
     }
     
     fileprivate func configureCompositionalLayout() -> UICollectionViewLayout {
@@ -50,6 +51,8 @@ class AppsViewController: UIViewController {
             switch section.type {
             case .featured:
                 return LayoutBuilder.featuredAppsSectionLayout()
+            case .rowBig:
+                return LayoutBuilder.twoRowsSectionLayout()
             default:
                 return LayoutBuilder.threeRowsSectionLayout()
             }
@@ -65,6 +68,8 @@ class AppsViewController: UIViewController {
             switch self.sections[indexPath.section].type {
             case .featured:
                 return CellBuilder.render(FeaturedAppsCell.self, for: collectionView, with: app, for: indexPath)
+            case .rowBig:
+                return CellBuilder.render(TwoRowsAppsCell.self, for: collectionView, with: app, for: indexPath)
             default:
                 return CellBuilder.render(ThreeRowsAppsCell.self, for: collectionView, with: app, for: indexPath)
             }

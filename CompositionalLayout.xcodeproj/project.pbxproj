@@ -22,6 +22,7 @@
 		7759E74C24E6974200C7BCDC /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759E74B24E6974200C7BCDC /* LayoutBuilder.swift */; };
 		77E0815724E6E0DD007130CE /* ThreeRowsAppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0815624E6E0DD007130CE /* ThreeRowsAppsCell.swift */; };
 		77E0815924E6F041007130CE /* AppsSectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0815824E6F041007130CE /* AppsSectionHeaderCell.swift */; };
+		77E0815B24E6F804007130CE /* TwoRowsAppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0815A24E6F804007130CE /* TwoRowsAppsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7759E74B24E6974200C7BCDC /* LayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
 		77E0815624E6E0DD007130CE /* ThreeRowsAppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeRowsAppsCell.swift; sourceTree = "<group>"; };
 		77E0815824E6F041007130CE /* AppsSectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSectionHeaderCell.swift; sourceTree = "<group>"; };
+		77E0815A24E6F804007130CE /* TwoRowsAppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRowsAppsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				7747B69E24E5D806009C1A90 /* FeaturedAppsCell.swift */,
 				77E0815624E6E0DD007130CE /* ThreeRowsAppsCell.swift */,
 				77E0815824E6F041007130CE /* AppsSectionHeaderCell.swift */,
+				77E0815A24E6F804007130CE /* TwoRowsAppsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				7747B69724E5BE20009C1A90 /* ConfigurableAppCell.swift in Sources */,
 				7747B69524E5BCEE009C1A90 /* Section.swift in Sources */,
+				77E0815B24E6F804007130CE /* TwoRowsAppsCell.swift in Sources */,
 				7747B67824E5ACEF009C1A90 /* AppDelegate.swift in Sources */,
 				77E0815724E6E0DD007130CE /* ThreeRowsAppsCell.swift in Sources */,
 				7747B69F24E5D806009C1A90 /* FeaturedAppsCell.swift in Sources */,
