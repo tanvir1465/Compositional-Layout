@@ -31,7 +31,7 @@ class AppsViewController: UIViewController {
     }
     
     fileprivate func addCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: configureCompositionalLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
         view.addSubview(collectionView)
@@ -39,6 +39,17 @@ class AppsViewController: UIViewController {
     
     fileprivate func registerCells() {
         collectionView.register(FeaturedAppsCell.self, forCellWithReuseIdentifier: FeaturedAppsCell.reuseIdentifier)
+    }
+    
+    fileprivate func configureCompositionalLayout() -> UICollectionViewLayout {
+        let layout = UICollectionViewCompositionalLayout { (index, environment) -> NSCollectionLayoutSection? in
+            let section = self.sections[index]
+            switch section.type {
+            default:
+                return LayoutBuilder.featuredAppsSectionLayout()
+            }
+        }
+        return layout
     }
     
     fileprivate func configureDataSource() {

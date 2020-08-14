@@ -36,7 +36,7 @@ class FeaturedAppsCell: UICollectionViewCell, ConfigurableAppCell {
     lazy var imageView: UIImageView = {
         let view = UIImageView()
         view.clipsToBounds = true
-        view.contentMode = .scaleAspectFit
+        view.contentMode = .scaleAspectFill
         view.layer.cornerRadius = 6
         return view
     }()
