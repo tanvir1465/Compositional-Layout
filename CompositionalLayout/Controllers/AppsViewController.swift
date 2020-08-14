@@ -34,6 +34,7 @@ class AppsViewController: UIViewController {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: configureCompositionalLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
+        collectionView.showsVerticalScrollIndicator = false
         view.addSubview(collectionView)
     }
     

@@ -30,8 +30,8 @@ enum LayoutBuilder {
         let size = Size(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.33))
         let item = Item(layoutSize: size)
         item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6)
-        let groupSize = Size(widthDimension: .fractionalWidth(0.95), heightDimension: .estimated(300))
-        let group = Group.horizontal(layoutSize: groupSize, subitems: [item])
+        let groupSize = Size(widthDimension: .fractionalWidth(0.95), heightDimension: .fractionalWidth(0.55))
+        let group = Group.vertical(layoutSize: groupSize, subitems: [item])
         let layout = LayoutSection(group: group)
         layout.orthogonalScrollingBehavior = .groupPagingCentered
         return layout

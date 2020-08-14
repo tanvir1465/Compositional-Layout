@@ -35,9 +35,9 @@ class ThreeRowsAppsCell: UICollectionViewCell, ConfigurableAppCell {
     }()
     
     lazy var downloadButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("GET", for: .normal)
-        button.setTitleColor(.systemBlue, for: .normal)
+        let button = UIButton(type: .custom)
+        button.setImage(UIImage(systemName: "icloud.and.arrow.down"), for: .normal)
+        button.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return button
     }()
     
@@ -53,9 +53,10 @@ class ThreeRowsAppsCell: UICollectionViewCell, ConfigurableAppCell {
         verticalStack = UIStackView(arrangedSubviews: [nameLabel, subtitleLabel])
         verticalStack.axis = .vertical
         horizontalStack = UIStackView(arrangedSubviews: [imageView, verticalStack, downloadButton])
+        horizontalStack.alignment = .center
         horizontalStack.axis = .horizontal
         horizontalStack.translatesAutoresizingMaskIntoConstraints = false
-        horizontalStack.spacing = 10
+        horizontalStack.spacing = 12
         contentView.addSubview(horizontalStack)
         setConstraints()
     }
@@ -81,10 +82,11 @@ extension ThreeRowsAppsCell {
     
     fileprivate func setConstraints() {
         NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.9),
+            imageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.9),
             horizontalStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             horizontalStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            horizontalStack.topAnchor.constraint(equalTo: contentView.topAnchor),
-            horizontalStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+            horizontalStack.topAnchor.constraint(equalTo: contentView.topAnchor)
         ])
     }
     
