@@ -52,10 +52,10 @@ extension AppsSectionHeaderCell {
     
     fileprivate func setConstraints() {
         NSLayoutConstraint.activate([
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 6),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
     }
     

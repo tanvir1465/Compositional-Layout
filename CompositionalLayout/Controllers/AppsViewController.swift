@@ -39,6 +39,7 @@ class AppsViewController: UIViewController {
     }
     
     fileprivate func registerCells() {
+        collectionView.register(AppsSectionHeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: AppsSectionHeaderCell.reuseIdentifier)
         collectionView.register(FeaturedAppsCell.self, forCellWithReuseIdentifier: FeaturedAppsCell.reuseIdentifier)
         collectionView.register(ThreeRowsAppsCell.self, forCellWithReuseIdentifier: ThreeRowsAppsCell.reuseIdentifier)
     }
@@ -47,10 +48,10 @@ class AppsViewController: UIViewController {
         let layout = UICollectionViewCompositionalLayout { (index, environment) -> NSCollectionLayoutSection? in
             let section = self.sections[index]
             switch section.type {
-            case .row:
-                return LayoutBuilder.threeRowsSectionLayout()
-            default:
+            case .featured:
                 return LayoutBuilder.featuredAppsSectionLayout()
+            default:
+                return LayoutBuilder.threeRowsSectionLayout()
             }
         }
         let layoutConfiguration = UICollectionViewCompositionalLayoutConfiguration()
@@ -62,12 +63,20 @@ class AppsViewController: UIViewController {
     fileprivate func configureDataSource() {
         dataSource = DataSource(collectionView: collectionView, cellProvider: { (collectionView, indexPath, app) -> UICollectionViewCell? in
             switch self.sections[indexPath.section].type {
-            case .row:
-                return CellBuilder.render(ThreeRowsAppsCell.self, for: collectionView, with: app, for: indexPath)
-            default:
+            case .featured:
                 return CellBuilder.render(FeaturedAppsCell.self, for: collectionView, with: app, for: indexPath)
+            default:
+                return CellBuilder.render(ThreeRowsAppsCell.self, for: collectionView, with: app, for: indexPath)
             }
         })
+        
+        dataSource?.supplementaryViewProvider = { [weak self] (collectionView, kind, indexPath) -> UICollectionReusableView? in
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AppsSectionHeaderCell.reuseIdentifier, for: indexPath) as? AppsSectionHeaderCell else { return nil }
+            guard let item = self?.dataSource?.itemIdentifier(for: indexPath) else { return nil }
+            guard let section = self?.dataSource?.snapshot().sectionIdentifier(containingItem: item) else { return nil }
+            header.titleLabel.text = section.title
+            return header
+        }
     }
     
     fileprivate func configureSnapshot() {

@@ -12,6 +12,7 @@ fileprivate typealias Size = NSCollectionLayoutSize
 fileprivate typealias Item = NSCollectionLayoutItem
 fileprivate typealias Group = NSCollectionLayoutGroup
 fileprivate typealias LayoutSection = NSCollectionLayoutSection
+fileprivate typealias SupplementaryItem = NSCollectionLayoutBoundarySupplementaryItem
 
 enum LayoutBuilder {
     
@@ -34,7 +35,15 @@ enum LayoutBuilder {
         let group = Group.vertical(layoutSize: groupSize, subitems: [item])
         let layout = LayoutSection(group: group)
         layout.orthogonalScrollingBehavior = .groupPagingCentered
+        let sectionHeader = createSectionHeader(with: 0.95)
+        layout.boundarySupplementaryItems = [sectionHeader]
         return layout
+    }
+    
+    private static func createSectionHeader(with fractionalWidth: CGFloat) -> SupplementaryItem {
+        let headerSize = Size(widthDimension: .fractionalWidth(fractionalWidth), heightDimension: .estimated(52))
+        let sectionHeader = SupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        return sectionHeader
     }
     
 }
