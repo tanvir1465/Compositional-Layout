@@ -39,12 +39,15 @@ class AppsViewController: UIViewController {
     
     fileprivate func registerCells() {
         collectionView.register(FeaturedAppsCell.self, forCellWithReuseIdentifier: FeaturedAppsCell.reuseIdentifier)
+        collectionView.register(ThreeRowsAppsCell.self, forCellWithReuseIdentifier: ThreeRowsAppsCell.reuseIdentifier)
     }
     
     fileprivate func configureCompositionalLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (index, environment) -> NSCollectionLayoutSection? in
             let section = self.sections[index]
             switch section.type {
+            case .row:
+                return LayoutBuilder.threeRowsSectionLayout()
             default:
                 return LayoutBuilder.featuredAppsSectionLayout()
             }
@@ -58,6 +61,8 @@ class AppsViewController: UIViewController {
     fileprivate func configureDataSource() {
         dataSource = DataSource(collectionView: collectionView, cellProvider: { (collectionView, indexPath, app) -> UICollectionViewCell? in
             switch self.sections[indexPath.section].type {
+            case .row:
+                return CellBuilder.render(ThreeRowsAppsCell.self, for: collectionView, with: app, for: indexPath)
             default:
                 return CellBuilder.render(FeaturedAppsCell.self, for: collectionView, with: app, for: indexPath)
             }
