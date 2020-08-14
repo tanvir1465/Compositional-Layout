@@ -8,12 +8,9 @@
 
 import UIKit
 
-class CellBuilder {
+enum CellBuilder {
     
-    private init() {}
-    static let shared = CellBuilder()
-    
-    public func render<T: ConfigurableAppCell>(_ cell: T.Type, for collectionView: UICollectionView, with app: App, for indexPath: IndexPath) -> T {
+    public static func render<T: ConfigurableAppCell>(_ cell: T.Type, for collectionView: UICollectionView, with app: App, for indexPath: IndexPath) -> T {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cell.reuseIdentifier, for: indexPath) as? T else {
             fatalError("Unable to dequeue requested cell")
         }

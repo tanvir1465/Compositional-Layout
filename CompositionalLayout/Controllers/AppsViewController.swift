@@ -45,7 +45,7 @@ class AppsViewController: UIViewController {
         dataSource = DataSource(collectionView: collectionView, cellProvider: { (collectionView, indexPath, app) -> UICollectionViewCell? in
             switch self.sections[indexPath.section].type {
             default:
-                return CellBuilder.shared.render(FeaturedAppsCell.self, for: collectionView, with: app, for: indexPath)
+                return CellBuilder.render(FeaturedAppsCell.self, for: collectionView, with: app, for: indexPath)
             }
         })
     }
