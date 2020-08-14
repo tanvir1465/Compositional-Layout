@@ -21,6 +21,7 @@
 		7747B69F24E5D806009C1A90 /* FeaturedAppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747B69E24E5D806009C1A90 /* FeaturedAppsCell.swift */; };
 		7759E74C24E6974200C7BCDC /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759E74B24E6974200C7BCDC /* LayoutBuilder.swift */; };
 		77E0815724E6E0DD007130CE /* ThreeRowsAppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0815624E6E0DD007130CE /* ThreeRowsAppsCell.swift */; };
+		77E0815924E6F041007130CE /* AppsSectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0815824E6F041007130CE /* AppsSectionHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		7747B69E24E5D806009C1A90 /* FeaturedAppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedAppsCell.swift; sourceTree = "<group>"; };
 		7759E74B24E6974200C7BCDC /* LayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
 		77E0815624E6E0DD007130CE /* ThreeRowsAppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeRowsAppsCell.swift; sourceTree = "<group>"; };
+		77E0815824E6F041007130CE /* AppsSectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSectionHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				7747B69E24E5D806009C1A90 /* FeaturedAppsCell.swift */,
 				77E0815624E6E0DD007130CE /* ThreeRowsAppsCell.swift */,
+				77E0815824E6F041007130CE /* AppsSectionHeaderCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				7747B69D24E5D555009C1A90 /* CellBuilder.swift in Sources */,
 				7747B69B24E5CAFB009C1A90 /* BundleExtension.swift in Sources */,
 				7747B69324E5BC24009C1A90 /* App.swift in Sources */,
+				77E0815924E6F041007130CE /* AppsSectionHeaderCell.swift in Sources */,
 				7747B68D24E5AF2B009C1A90 /* AppsViewController.swift in Sources */,
 				7747B67A24E5ACEF009C1A90 /* SceneDelegate.swift in Sources */,
 				7759E74C24E6974200C7BCDC /* LayoutBuilder.swift in Sources */,
