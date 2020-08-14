@@ -49,6 +49,9 @@ class AppsViewController: UIViewController {
                 return LayoutBuilder.featuredAppsSectionLayout()
             }
         }
+        let layoutConfiguration = UICollectionViewCompositionalLayoutConfiguration()
+        layoutConfiguration.interSectionSpacing = 20
+        layout.configuration = layoutConfiguration
         return layout
     }
     
