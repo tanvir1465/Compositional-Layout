@@ -19,6 +19,7 @@
 		7747B69B24E5CAFB009C1A90 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747B69A24E5CAFB009C1A90 /* BundleExtension.swift */; };
 		7747B69D24E5D555009C1A90 /* CellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747B69C24E5D555009C1A90 /* CellBuilder.swift */; };
 		7747B69F24E5D806009C1A90 /* FeaturedAppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747B69E24E5D806009C1A90 /* FeaturedAppsCell.swift */; };
+		7759E74C24E6974200C7BCDC /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759E74B24E6974200C7BCDC /* LayoutBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7747B69A24E5CAFB009C1A90 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		7747B69C24E5D555009C1A90 /* CellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBuilder.swift; sourceTree = "<group>"; };
 		7747B69E24E5D806009C1A90 /* FeaturedAppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedAppsCell.swift; sourceTree = "<group>"; };
+		7759E74B24E6974200C7BCDC /* LayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				7747B69624E5BE20009C1A90 /* ConfigurableAppCell.swift */,
 				7747B69A24E5CAFB009C1A90 /* BundleExtension.swift */,
 				7747B69C24E5D555009C1A90 /* CellBuilder.swift */,
+				7759E74B24E6974200C7BCDC /* LayoutBuilder.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				7747B69324E5BC24009C1A90 /* App.swift in Sources */,
 				7747B68D24E5AF2B009C1A90 /* AppsViewController.swift in Sources */,
 				7747B67A24E5ACEF009C1A90 /* SceneDelegate.swift in Sources */,
+				7759E74C24E6974200C7BCDC /* LayoutBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
